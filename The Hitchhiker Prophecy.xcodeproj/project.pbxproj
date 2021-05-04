@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017EC1D32496484A00CB124A /* HomeSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EC1D22496484A00CB124A /* HomeSceneConfigurator.swift */; };
+		019ACF7824925B32003E3ECF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF7724925B32003E3ECF /* NetworkError.swift */; };
+		019ACF7C24925D14003E3ECF /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF7B24925D14003E3ECF /* NetworkConstants.swift */; };
+		019ACF7F24925DFE003E3ECF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF7E24925DFE003E3ECF /* Router.swift */; };
+		019ACF8124925E15003E3ECF /* CharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF8024925E15003E3ECF /* CharacterRouter.swift */; };
+		019ACF8324925EB5003E3ECF /* URL_Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF8224925EB5003E3ECF /* URL_Generator.swift */; };
+		019ACF862492651D003E3ECF /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF852492651D003E3ECF /* Characters.swift */; };
+		019ACF89249268BA003E3ECF /* CharactersSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF88249268BA003E3ECF /* CharactersSearch.swift */; };
+		019ACF8C24926E0E003E3ECF /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF8B24926E0E003E3ECF /* Encodable+Dictionary.swift */; };
+		019ACF8E24926F55003E3ECF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF8D24926F55003E3ECF /* NetworkService.swift */; };
+		019ACF9024926F7F003E3ECF /* CharactersNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF8F24926F7F003E3ECF /* CharactersNetworkService.swift */; };
+		019ACF93249276FC003E3ECF /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF92249276FC003E3ECF /* HomeWorker.swift */; };
+		019ACF9524927760003E3ECF /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019ACF9424927760003E3ECF /* HomeScene.swift */; };
+		01AD290224956FC8006AF9D0 /* HomeSceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD290124956FC8006AF9D0 /* HomeSceneProtocols.swift */; };
+		01AD2904249571C9006AF9D0 /* HomeSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD2903249571C9006AF9D0 /* HomeSceneInteractor.swift */; };
+		01AD2906249577B9006AF9D0 /* HomeScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD2905249577B9006AF9D0 /* HomeScenePresenter.swift */; };
+		01D65F60249138A30082F8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F5F249138A30082F8FF /* AppDelegate.swift */; };
+		01D65F64249138A30082F8FF /* HomeSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F63249138A30082F8FF /* HomeSceneViewController.swift */; };
+		01D65F69249138AD0082F8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D65F68249138AD0082F8FF /* Assets.xcassets */; };
+		01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D65F6A249138AD0082F8FF /* LaunchScreen.storyboard */; };
+		01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */; };
+		01D65F8224913B760082F8FF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F8124913B760082F8FF /* SessionManager.swift */; };
+		01D65F8424913BD40082F8FF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F8324913BD40082F8FF /* Request.swift */; };
+		76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */; };
+		76C7AE382497AD910053EF25 /* CharacterDetailsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE362497AD910053EF25 /* CharacterDetailsSceneViewController.swift */; };
+		76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE372497AD910053EF25 /* CharacterDetailsSceneViewController.xib */; };
+		76C7AE3B2497AF3F0053EF25 /* CharacterDetailsSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE3A2497AF3F0053EF25 /* CharacterDetailsSceneConfigurator.swift */; };
+		76C7AE3F2497AFBE0053EF25 /* HomeSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE3E2497AFBE0053EF25 /* HomeSceneRouter.swift */; };
+		76C7AE442497B7370053EF25 /* CharacterDetailsSceneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE432497B7370053EF25 /* CharacterDetailsSceneProtocols.swift */; };
+		76C7AE462497B7BF0053EF25 /* CharacterDetailsSceneModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE452497B7BF0053EF25 /* CharacterDetailsSceneModels.swift */; };
+		76C7AE482497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */; };
+		76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */; };
+		76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */; };
+		76C7AE50249803460053EF25 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
+		A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */; };
+		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
+		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
+		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D65F7C24913A160082F8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D65F54249138A20082F8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D65F5B249138A30082F8FF;
+			remoteInfo = "The Hitchhiker Prophecy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017EC1D22496484A00CB124A /* HomeSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneConfigurator.swift; sourceTree = "<group>"; };
+		019ACF7724925B32003E3ECF /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		019ACF7B24925D14003E3ECF /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		019ACF7E24925DFE003E3ECF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		019ACF8024925E15003E3ECF /* CharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRouter.swift; sourceTree = "<group>"; };
+		019ACF8224925EB5003E3ECF /* URL_Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL_Generator.swift; sourceTree = "<group>"; };
+		019ACF852492651D003E3ECF /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		019ACF88249268BA003E3ECF /* CharactersSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSearch.swift; sourceTree = "<group>"; };
+		019ACF8B24926E0E003E3ECF /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		019ACF8D24926F55003E3ECF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		019ACF8F24926F7F003E3ECF /* CharactersNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersNetworkService.swift; sourceTree = "<group>"; };
+		019ACF92249276FC003E3ECF /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		019ACF9424927760003E3ECF /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
+		01AD290124956FC8006AF9D0 /* HomeSceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneProtocols.swift; sourceTree = "<group>"; };
+		01AD2903249571C9006AF9D0 /* HomeSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractor.swift; sourceTree = "<group>"; };
+		01AD2905249577B9006AF9D0 /* HomeScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresenter.swift; sourceTree = "<group>"; };
+		01D65F5C249138A30082F8FF /* The Hitchhiker Prophecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Hitchhiker Prophecy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D65F5F249138A30082F8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D65F63249138A30082F8FF /* HomeSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewController.swift; sourceTree = "<group>"; };
+		01D65F68249138AD0082F8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D65F6B249138AD0082F8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01D65F6D249138AD0082F8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D65F7724913A160082F8FF /* The Hitchhiker ProphecyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Hitchhiker ProphecyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Hitchhiker_ProphecyTests.swift; sourceTree = "<group>"; };
+		01D65F7B24913A160082F8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D65F8124913B760082F8FF /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		01D65F8324913BD40082F8FF /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		15699D3B559570DF31F0A14D /* Pods-The Hitchhiker Prophecy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.debug.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.debug.xcconfig"; sourceTree = "<group>"; };
+		26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Hitchhiker_Prophecy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSceneViewController.xib; sourceTree = "<group>"; };
+		76C7AE362497AD910053EF25 /* CharacterDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneViewController.swift; sourceTree = "<group>"; };
+		76C7AE372497AD910053EF25 /* CharacterDetailsSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsSceneViewController.xib; sourceTree = "<group>"; };
+		76C7AE3A2497AF3F0053EF25 /* CharacterDetailsSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneConfigurator.swift; sourceTree = "<group>"; };
+		76C7AE3E2497AFBE0053EF25 /* HomeSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneRouter.swift; sourceTree = "<group>"; };
+		76C7AE432497B7370053EF25 /* CharacterDetailsSceneProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneProtocols.swift; sourceTree = "<group>"; };
+		76C7AE452497B7BF0053EF25 /* CharacterDetailsSceneModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneModels.swift; sourceTree = "<group>"; };
+		76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneInteractor.swift; sourceTree = "<group>"; };
+		76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsScenePresenter.swift; sourceTree = "<group>"; };
+		76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
+		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
+		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D65F59249138A30082F8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D65F7424913A160082F8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019ACF7924925BFC003E3ECF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF8A24926DE4003E3ECF /* Extensions */,
+				019ACF7D24925D9F003E3ECF /* Characters */,
+				019ACF7A24925C0A003E3ECF /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		019ACF7A24925C0A003E3ECF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF7E24925DFE003E3ECF /* Router.swift */,
+				019ACF8D24926F55003E3ECF /* NetworkService.swift */,
+				019ACF7724925B32003E3ECF /* NetworkError.swift */,
+				01D65F8124913B760082F8FF /* SessionManager.swift */,
+				019ACF8224925EB5003E3ECF /* URL_Generator.swift */,
+				01D65F8324913BD40082F8FF /* Request.swift */,
+				019ACF7B24925D14003E3ECF /* NetworkConstants.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		019ACF7D24925D9F003E3ECF /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF8024925E15003E3ECF /* CharacterRouter.swift */,
+				019ACF8F24926F7F003E3ECF /* CharactersNetworkService.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		019ACF8424926512003E3ECF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF87249267F2003E3ECF /* Characters */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		019ACF87249267F2003E3ECF /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF852492651D003E3ECF /* Characters.swift */,
+				019ACF88249268BA003E3ECF /* CharactersSearch.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		019ACF8A24926DE4003E3ECF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF8B24926E0E003E3ECF /* Encodable+Dictionary.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		019ACF91249276E7003E3ECF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A9F01E9B24E1EF200034ABB9 /* Worker */,
+				A9F01E9A24E1EF070034ABB9 /* Shared Views */,
+				A9F01E9C24E1EFAB0034ABB9 /* Home Scene */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		01D65F53249138A20082F8FF = {
+			isa = PBXGroup;
+			children = (
+				01D65F5E249138A30082F8FF /* The Hitchhiker Prophecy */,
+				01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */,
+				01D65F5D249138A30082F8FF /* Products */,
+				EE489723C61A1E6A67306417 /* Pods */,
+				355C258A732F834194B82F7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01D65F5D249138A30082F8FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D65F5C249138A30082F8FF /* The Hitchhiker Prophecy.app */,
+				01D65F7724913A160082F8FF /* The Hitchhiker ProphecyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D65F5E249138A30082F8FF /* The Hitchhiker Prophecy */ = {
+			isa = PBXGroup;
+			children = (
+				01D65F6D249138AD0082F8FF /* Info.plist */,
+				A9F01E9324E1ED270034ABB9 /* Managers */,
+				76A9C3BF24A40CC4001E707F /* Main */,
+				76A9C3BE24A40CB2001E707F /* Resources */,
+				76A9C3BC24A40C93001E707F /* Modules */,
+				019ACF8424926512003E3ECF /* Domain */,
+				019ACF7924925BFC003E3ECF /* Networking */,
+			);
+			path = "The Hitchhiker Prophecy";
+			sourceTree = "<group>";
+		};
+		01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */ = {
+			isa = PBXGroup;
+			children = (
+				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
+				01D65F7B24913A160082F8FF /* Info.plist */,
+			);
+			path = "The Hitchhiker ProphecyTests";
+			sourceTree = "<group>";
+		};
+		355C258A732F834194B82F7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76A9C3BC24A40C93001E707F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF91249276E7003E3ECF /* Home */,
+				76C7AE342497AD320053EF25 /* Charachter Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		76A9C3BE24A40CB2001E707F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01D65F68249138AD0082F8FF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76A9C3BF24A40CC4001E707F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				01D65F5F249138A30082F8FF /* AppDelegate.swift */,
+				01D65F6A249138AD0082F8FF /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		76C7AE342497AD320053EF25 /* Charachter Details */ = {
+			isa = PBXGroup;
+			children = (
+				A9F01E9D24E1EFCA0034ABB9 /* Scene */,
+			);
+			path = "Charachter Details";
+			sourceTree = "<group>";
+		};
+		76C7AE352497AD470053EF25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76C7AE362497AD910053EF25 /* CharacterDetailsSceneViewController.swift */,
+				76C7AE372497AD910053EF25 /* CharacterDetailsSceneViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76C7AE4B2498030A0053EF25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01D65F63249138A30082F8FF /* HomeSceneViewController.swift */,
+				76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76C7AE4C249803120053EF25 /* Home Character CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */,
+				76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */,
+			);
+			path = "Home Character CollectionViewCell";
+			sourceTree = "<group>";
+		};
+		A9F01E9324E1ED270034ABB9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */,
+				A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */,
+				A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A9F01E9A24E1EF070034ABB9 /* Shared Views */ = {
+			isa = PBXGroup;
+			children = (
+				76C7AE4C249803120053EF25 /* Home Character CollectionViewCell */,
+			);
+			path = "Shared Views";
+			sourceTree = "<group>";
+		};
+		A9F01E9B24E1EF200034ABB9 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				019ACF92249276FC003E3ECF /* HomeWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		A9F01E9C24E1EFAB0034ABB9 /* Home Scene */ = {
+			isa = PBXGroup;
+			children = (
+				76C7AE4B2498030A0053EF25 /* Views */,
+				01AD290124956FC8006AF9D0 /* HomeSceneProtocols.swift */,
+				019ACF9424927760003E3ECF /* HomeScene.swift */,
+				01AD2903249571C9006AF9D0 /* HomeSceneInteractor.swift */,
+				01AD2905249577B9006AF9D0 /* HomeScenePresenter.swift */,
+				017EC1D22496484A00CB124A /* HomeSceneConfigurator.swift */,
+				76C7AE3E2497AFBE0053EF25 /* HomeSceneRouter.swift */,
+			);
+			path = "Home Scene";
+			sourceTree = "<group>";
+		};
+		A9F01E9D24E1EFCA0034ABB9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				76C7AE352497AD470053EF25 /* Views */,
+				76C7AE3A2497AF3F0053EF25 /* CharacterDetailsSceneConfigurator.swift */,
+				76C7AE432497B7370053EF25 /* CharacterDetailsSceneProtocols.swift */,
+				76C7AE452497B7BF0053EF25 /* CharacterDetailsSceneModels.swift */,
+				76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */,
+				76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EE489723C61A1E6A67306417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15699D3B559570DF31F0A14D /* Pods-The Hitchhiker Prophecy.debug.xcconfig */,
+				E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D65F5B249138A30082F8FF /* The Hitchhiker Prophecy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D65F70249138AD0082F8FF /* Build configuration list for PBXNativeTarget "The Hitchhiker Prophecy" */;
+			buildPhases = (
+				C077B9B59E76193624A58890 /* [CP] Check Pods Manifest.lock */,
+				01D65F58249138A30082F8FF /* Sources */,
+				01D65F59249138A30082F8FF /* Frameworks */,
+				01D65F5A249138A30082F8FF /* Resources */,
+				B7164F3C045AB94BFBB68811 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Hitchhiker Prophecy";
+			productName = "The Hitchhiker Prophecy";
+			productReference = 01D65F5C249138A30082F8FF /* The Hitchhiker Prophecy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01D65F7624913A160082F8FF /* The Hitchhiker ProphecyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D65F8024913A160082F8FF /* Build configuration list for PBXNativeTarget "The Hitchhiker ProphecyTests" */;
+			buildPhases = (
+				01D65F7324913A160082F8FF /* Sources */,
+				01D65F7424913A160082F8FF /* Frameworks */,
+				01D65F7524913A160082F8FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D65F7D24913A160082F8FF /* PBXTargetDependency */,
+			);
+			name = "The Hitchhiker ProphecyTests";
+			productName = "The Hitchhiker ProphecyTests";
+			productReference = 01D65F7724913A160082F8FF /* The Hitchhiker ProphecyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D65F54249138A20082F8FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = SWVL;
+				TargetAttributes = {
+					01D65F5B249138A30082F8FF = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					01D65F7624913A160082F8FF = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 01D65F5B249138A30082F8FF;
+					};
+				};
+			};
+			buildConfigurationList = 01D65F57249138A20082F8FF /* Build configuration list for PBXProject "The Hitchhiker Prophecy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D65F53249138A20082F8FF;
+			productRefGroup = 01D65F5D249138A30082F8FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D65F5B249138A30082F8FF /* The Hitchhiker Prophecy */,
+				01D65F7624913A160082F8FF /* The Hitchhiker ProphecyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D65F5A249138A30082F8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */,
+				01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */,
+				76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */,
+				01D65F69249138AD0082F8FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D65F7524913A160082F8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7164F3C045AB94BFBB68811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C077B9B59E76193624A58890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Hitchhiker Prophecy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D65F58249138A30082F8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C7AE482497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift in Sources */,
+				76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */,
+				A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */,
+				019ACF7C24925D14003E3ECF /* NetworkConstants.swift in Sources */,
+				76C7AE442497B7370053EF25 /* CharacterDetailsSceneProtocols.swift in Sources */,
+				A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */,
+				76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */,
+				019ACF862492651D003E3ECF /* Characters.swift in Sources */,
+				01D65F64249138A30082F8FF /* HomeSceneViewController.swift in Sources */,
+				019ACF9524927760003E3ECF /* HomeScene.swift in Sources */,
+				019ACF7824925B32003E3ECF /* NetworkError.swift in Sources */,
+				01AD2906249577B9006AF9D0 /* HomeScenePresenter.swift in Sources */,
+				019ACF9024926F7F003E3ECF /* CharactersNetworkService.swift in Sources */,
+				76C7AE382497AD910053EF25 /* CharacterDetailsSceneViewController.swift in Sources */,
+				017EC1D32496484A00CB124A /* HomeSceneConfigurator.swift in Sources */,
+				019ACF93249276FC003E3ECF /* HomeWorker.swift in Sources */,
+				019ACF8124925E15003E3ECF /* CharacterRouter.swift in Sources */,
+				76C7AE3F2497AFBE0053EF25 /* HomeSceneRouter.swift in Sources */,
+				A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */,
+				019ACF8C24926E0E003E3ECF /* Encodable+Dictionary.swift in Sources */,
+				01AD2904249571C9006AF9D0 /* HomeSceneInteractor.swift in Sources */,
+				019ACF89249268BA003E3ECF /* CharactersSearch.swift in Sources */,
+				019ACF7F24925DFE003E3ECF /* Router.swift in Sources */,
+				01D65F60249138A30082F8FF /* AppDelegate.swift in Sources */,
+				019ACF8E24926F55003E3ECF /* NetworkService.swift in Sources */,
+				01D65F8424913BD40082F8FF /* Request.swift in Sources */,
+				019ACF8324925EB5003E3ECF /* URL_Generator.swift in Sources */,
+				76C7AE3B2497AF3F0053EF25 /* CharacterDetailsSceneConfigurator.swift in Sources */,
+				76C7AE462497B7BF0053EF25 /* CharacterDetailsSceneModels.swift in Sources */,
+				01AD290224956FC8006AF9D0 /* HomeSceneProtocols.swift in Sources */,
+				01D65F8224913B760082F8FF /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D65F7324913A160082F8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01D65F7D24913A160082F8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D65F5B249138A30082F8FF /* The Hitchhiker Prophecy */;
+			targetProxy = 01D65F7C24913A160082F8FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01D65F6A249138AD0082F8FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D65F6B249138AD0082F8FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01D65F6E249138AD0082F8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01D65F6F249138AD0082F8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01D65F71249138AD0082F8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15699D3B559570DF31F0A14D /* Pods-The Hitchhiker Prophecy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6267355CA;
+				INFOPLIST_FILE = "The Hitchhiker Prophecy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swvl.The-Hitchhiker-Prophecy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		01D65F72249138AD0082F8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6267355CA;
+				INFOPLIST_FILE = "The Hitchhiker Prophecy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swvl.The-Hitchhiker-Prophecy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		01D65F7E24913A160082F8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Hitchhiker ProphecyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swvl.The-Hitchhiker-ProphecyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Hitchhiker Prophecy.app/The Hitchhiker Prophecy";
+			};
+			name = Debug;
+		};
+		01D65F7F24913A160082F8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Hitchhiker ProphecyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swvl.The-Hitchhiker-ProphecyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Hitchhiker Prophecy.app/The Hitchhiker Prophecy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D65F57249138A20082F8FF /* Build configuration list for PBXProject "The Hitchhiker Prophecy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D65F6E249138AD0082F8FF /* Debug */,
+				01D65F6F249138AD0082F8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D65F70249138AD0082F8FF /* Build configuration list for PBXNativeTarget "The Hitchhiker Prophecy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D65F71249138AD0082F8FF /* Debug */,
+				01D65F72249138AD0082F8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D65F8024913A160082F8FF /* Build configuration list for PBXNativeTarget "The Hitchhiker ProphecyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D65F7E24913A160082F8FF /* Debug */,
+				01D65F7F24913A160082F8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D65F54249138A20082F8FF /* Project object */;
+}

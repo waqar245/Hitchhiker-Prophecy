@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCharacterCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCharacterCollectionViewCell" customModule="The_Hitchhiker_Prophecy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="586"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="586"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vz6-UY-YKi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="551.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-cf-toV">
+                        <rect key="frame" x="16" y="559.5" width="361" height="26.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dTn-cf-toV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="2N4-vJ-nPS"/>
+                <constraint firstAttribute="trailing" secondItem="dTn-cf-toV" secondAttribute="trailing" constant="16" id="OZ1-fi-yc2"/>
+                <constraint firstItem="vz6-UY-YKi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QsW-eb-MOS"/>
+                <constraint firstItem="dTn-cf-toV" firstAttribute="top" secondItem="vz6-UY-YKi" secondAttribute="bottom" constant="8" id="VuL-rg-4tT"/>
+                <constraint firstItem="vz6-UY-YKi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="chf-fp-rXU"/>
+                <constraint firstAttribute="trailing" secondItem="vz6-UY-YKi" secondAttribute="trailing" id="loI-eF-Wze"/>
+                <constraint firstAttribute="bottom" secondItem="dTn-cf-toV" secondAttribute="bottom" id="ysu-wc-Pxw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="393" height="586"/>
+            <connections>
+                <outlet property="characterImageView" destination="vz6-UY-YKi" id="uMY-PC-R6W"/>
+                <outlet property="characterNameLabel" destination="dTn-cf-toV" id="Yld-CI-ciU"/>
+            </connections>
+            <point key="canvasLocation" x="386.23188405797106" y="277.23214285714283"/>
+        </collectionViewCell>
+    </objects>
+</document>
