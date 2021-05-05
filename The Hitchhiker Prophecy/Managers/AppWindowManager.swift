@@ -9,15 +9,20 @@
 import UIKit
 
 enum AppWindowManager {
-    static func setupWindow() {
-        let window = self.window ?? UIWindow.init(frame: windowFrame)
+    static func setupWindow(_ window:inout UIWindow?) {
+        
+        if (window == nil) {
+            window = UIWindow.init(frame: windowFrame)
+        }
+        
         let controller = HomeSceneConfigurator.configure()
-        window.rootViewController = controller
-        window.makeKeyAndVisible()
+        window?.rootViewController = controller
+        window?.makeKeyAndVisible()
     }
 }
 
 private extension AppWindowManager {
+    /*
     static var window: UIWindow? {
         get {
             return (UIApplication.shared.delegate as? AppDelegate)?.window
@@ -25,7 +30,7 @@ private extension AppWindowManager {
         set {
             (UIApplication.shared.delegate as? AppDelegate)?.window = newValue
         }
-    }
+    }*/
 
     static var windowFrame: CGRect {
         return UIScreen.main.bounds
