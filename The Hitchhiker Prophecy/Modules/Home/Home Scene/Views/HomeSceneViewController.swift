@@ -26,12 +26,6 @@ class HomeSceneViewController: UIViewController {
         interactor?.fetchCharacters()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        collectionView.reloadData()
-    }
-    
     func setupUI()  {
         
         collectionView.collectionViewLayout = HomeChararctersVerticalLayout()
@@ -41,19 +35,11 @@ class HomeSceneViewController: UIViewController {
     
     @IBAction func onToggle()   {
         
-        //let album = albumReleased(year: 2006)?.uppercased()
-        //print("The album is \(album)")
-        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+        if let currentLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             
-            if (layout.scrollDirection == .vertical) {
-                collectionView.setCollectionViewLayout(HomeChararctersHorizontalLayout(), animated: true)
-                //collectionView.isPagingEnabled = true
-            }
-            else {
-                collectionView.setCollectionViewLayout(HomeChararctersVerticalLayout(), animated: true)
-                //collectionView.collectionViewLayout = HomeChararctersVerticalLayout()
-                //collectionView.isPagingEnabled = false
-            }
+            let newLayout = (currentLayout.scrollDirection == .vertical) ? HomeChararctersHorizontalLayout() : HomeChararctersVerticalLayout()
+            
+            collectionView.setCollectionViewLayout(newLayout, animated: true)
         }
     }
     
@@ -89,5 +75,10 @@ extension HomeSceneViewController: UICollectionViewDataSource, UICollectionViewD
         cell?.configure(with: characterViewModel)
         
         return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        router?.routeToCharacterDetailsWithCharacter(at: indexPath.row)
     }
 }

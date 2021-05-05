@@ -41,6 +41,7 @@
 		76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */; };
 		76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */; };
 		8232296526414085003460F6 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232296426414085003460F6 /* Crypto.swift */; };
+		824197BB2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824197BA2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift */; };
 		8245E2382641C14600A1A5AB /* HomeChararctersVerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */; };
 		8245E23C2641C4C800A1A5AB /* Object+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */; };
 		8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */; };
@@ -101,6 +102,7 @@
 		76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsScenePresenter.swift; sourceTree = "<group>"; };
 		76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		8232296426414085003460F6 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		824197BA2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChararctersHorizontalLayout.swift; sourceTree = "<group>"; };
 		8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChararctersVerticalLayout.swift; sourceTree = "<group>"; };
 		8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+Extensions.swift"; sourceTree = "<group>"; };
 		8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -305,9 +307,9 @@
 		76C7AE4C249803120053EF25 /* Home Character CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				824197B92642BCC700D6C498 /* Layouts */,
 				8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */,
 				76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */,
-				8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */,
 			);
 			path = "Home Character CollectionViewCell";
 			sourceTree = "<group>";
@@ -318,6 +320,15 @@
 				8232296426414085003460F6 /* Crypto.swift */,
 			);
 			path = Utilitites;
+			sourceTree = "<group>";
+		};
+		824197B92642BCC700D6C498 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */,
+				824197BA2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		A9F01E9324E1ED270034ABB9 /* Managers */ = {
@@ -553,6 +564,7 @@
 				A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */,
 				019ACF8C24926E0E003E3ECF /* Encodable+Dictionary.swift in Sources */,
 				01AD2904249571C9006AF9D0 /* HomeSceneInteractor.swift in Sources */,
+				824197BB2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift in Sources */,
 				019ACF89249268BA003E3ECF /* CharactersSearch.swift in Sources */,
 				019ACF7F24925DFE003E3ECF /* Router.swift in Sources */,
 				01D65F60249138A30082F8FF /* AppDelegate.swift in Sources */,
