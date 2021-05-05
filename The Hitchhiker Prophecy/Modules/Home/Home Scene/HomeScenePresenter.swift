@@ -15,7 +15,48 @@ class HomeScenePresneter: HomeScenePresentationLogic {
         self.displayView = displayView
     }
     
+    fileprivate func createViewModels(_ characters:[Characters.Search.Character]) -> [HomeScene.Search.ViewModel] {
+            
+            var viewModels = [HomeScene.Search.ViewModel]()
+            
+            for character in characters {
+
+                let imagePath = "\(character.thumbnail.path)/\(HomeScene.Search.Constants.ImageSize.Portrait.incredible.rawValue).\(character.thumbnail.thumbnailExtension)"
+                
+                let viewModel = HomeScene.Search.ViewModel(name: character.name,
+                                                           desc: character.resultDescription,
+                                                           imageUrl: imagePath,
+                                                           comics: character.comics.collectionURI,
+                                                           series: character.series.collectionURI,
+                                                           stories: character.stories.collectionURI,
+                                                           events: character.events.collectionURI)
+                
+                viewModels.append(viewModel)
+            }
+            
+            return viewModels
+        }
+    
     func presentCharacters(_ response: HomeScene.Search.Response) {
         // TODO: Implement
+        
+        //paging needs to be done
+        
+        switch response {
+    
+            case .success(let output):
+                
+                let characters = output.data.results
+                
+                let characterViewModels = self.createViewModels(characters)
+                
+                displayView?.didFetchCharacters(viewModel: characterViewModels)
+                
+            case .failure(let error):
+                
+                print(error.localizedDescription)
+                
+                displayView?.failedToFetchCharacters(error: error)
+        }
     }
 }
