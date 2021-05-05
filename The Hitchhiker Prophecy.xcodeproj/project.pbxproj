@@ -40,7 +40,10 @@
 		76C7AE482497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */; };
 		76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */; };
 		76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */; };
-		76C7AE50249803460053EF25 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
+		8232296526414085003460F6 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232296426414085003460F6 /* Crypto.swift */; };
+		8245E2382641C14600A1A5AB /* HomeChararctersVerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */; };
+		8245E23C2641C4C800A1A5AB /* Object+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */; };
+		8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */; };
 		A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */; };
 		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
 		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
@@ -97,7 +100,10 @@
 		76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneInteractor.swift; sourceTree = "<group>"; };
 		76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsScenePresenter.swift; sourceTree = "<group>"; };
 		76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
-		76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		8232296426414085003460F6 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChararctersVerticalLayout.swift; sourceTree = "<group>"; };
+		8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+Extensions.swift"; sourceTree = "<group>"; };
+		8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				019ACF8B24926E0E003E3ECF /* Encodable+Dictionary.swift */,
+				8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 				76A9C3BC24A40C93001E707F /* Modules */,
 				019ACF8424926512003E3ECF /* Domain */,
 				019ACF7924925BFC003E3ECF /* Networking */,
+				8232296326414078003460F6 /* Utilitites */,
 			);
 			path = "The Hitchhiker Prophecy";
 			sourceTree = "<group>";
@@ -297,10 +305,19 @@
 		76C7AE4C249803120053EF25 /* Home Character CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */,
 				76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */,
-				76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */,
+				8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */,
 			);
 			path = "Home Character CollectionViewCell";
+			sourceTree = "<group>";
+		};
+		8232296326414078003460F6 /* Utilitites */ = {
+			isa = PBXGroup;
+			children = (
+				8232296426414085003460F6 /* Crypto.swift */,
+			);
+			path = Utilitites;
 			sourceTree = "<group>";
 		};
 		A9F01E9324E1ED270034ABB9 /* Managers */ = {
@@ -448,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */,
 				76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */,
 				01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */,
 				76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */,
@@ -519,12 +537,15 @@
 				A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */,
 				76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */,
 				019ACF862492651D003E3ECF /* Characters.swift in Sources */,
+				8245E2382641C14600A1A5AB /* HomeChararctersVerticalLayout.swift in Sources */,
+				8232296526414085003460F6 /* Crypto.swift in Sources */,
 				01D65F64249138A30082F8FF /* HomeSceneViewController.swift in Sources */,
 				019ACF9524927760003E3ECF /* HomeScene.swift in Sources */,
 				019ACF7824925B32003E3ECF /* NetworkError.swift in Sources */,
 				01AD2906249577B9006AF9D0 /* HomeScenePresenter.swift in Sources */,
 				019ACF9024926F7F003E3ECF /* CharactersNetworkService.swift in Sources */,
 				76C7AE382497AD910053EF25 /* CharacterDetailsSceneViewController.swift in Sources */,
+				8245E23C2641C4C800A1A5AB /* Object+Extensions.swift in Sources */,
 				017EC1D32496484A00CB124A /* HomeSceneConfigurator.swift in Sources */,
 				019ACF93249276FC003E3ECF /* HomeWorker.swift in Sources */,
 				019ACF8124925E15003E3ECF /* CharacterRouter.swift in Sources */,
