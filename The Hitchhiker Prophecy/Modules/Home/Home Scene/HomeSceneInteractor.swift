@@ -22,12 +22,25 @@ class HomeSceneInteractor: HomeSceneDataStore {
 }
 
 extension HomeSceneInteractor: HomeSceneBusinessLogic {
+    
+    var totalNumberOfCharacters: Int {
+        return result?.total ?? 0
+    }
+    
     func fetchCharacters() {
         
         let ts = "1"
         let hash = "\(ts)\(NetworkConstants.privateKey)\(NetworkConstants.publicKey)".md5  // TODO: Implement
         let limit = HomeScene.Search.Constants.searchPageLimit
-        let offset = result?.offset ?? 0
+        let numberOfItemsFetched = result?.results.count ?? 0
+        let total = result?.total ?? 0
+        let offset = numberOfItemsFetched
+        
+        //Limit the requests at the end. If number of fetched characters is equal to total -> return
+        if ((total > 0) && (numberOfItemsFetched >= total)) {
+            return
+        }
+        
         let input = Characters.Search.Input(timeStamp: ts, apiKey: NetworkConstants.publicKey, hash: hash, offset: offset, limit: limit, orderBy: .modifiedDateDescending)
         
         worker.getCharacters(input) { [weak self] (result) in

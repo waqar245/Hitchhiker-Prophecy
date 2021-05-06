@@ -42,6 +42,8 @@
 		76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */; };
 		8232296526414085003460F6 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232296426414085003460F6 /* Crypto.swift */; };
 		824197BB2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824197BA2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift */; };
+		824197C32642F64500D6C498 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824197C12642F64500D6C498 /* LoadingCollectionViewCell.swift */; };
+		824197C42642F64500D6C498 /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824197C22642F64500D6C498 /* LoadingCollectionViewCell.xib */; };
 		8245E2382641C14600A1A5AB /* HomeChararctersVerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */; };
 		8245E23C2641C4C800A1A5AB /* Object+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */; };
 		8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */; };
@@ -103,6 +105,8 @@
 		76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		8232296426414085003460F6 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		824197BA2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChararctersHorizontalLayout.swift; sourceTree = "<group>"; };
+		824197C12642F64500D6C498 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		824197C22642F64500D6C498 /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
 		8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChararctersVerticalLayout.swift; sourceTree = "<group>"; };
 		8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+Extensions.swift"; sourceTree = "<group>"; };
 		8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 		01D65F5E249138A30082F8FF /* The Hitchhiker Prophecy */ = {
 			isa = PBXGroup;
 			children = (
+				824197C02642F61800D6C498 /* ReUsableComponents */,
 				01D65F6D249138AD0082F8FF /* Info.plist */,
 				A9F01E9324E1ED270034ABB9 /* Managers */,
 				76A9C3BF24A40CC4001E707F /* Main */,
@@ -329,6 +334,15 @@
 				824197BA2642BCD500D6C498 /* HomeChararctersHorizontalLayout.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		824197C02642F61800D6C498 /* ReUsableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				824197C12642F64500D6C498 /* LoadingCollectionViewCell.swift */,
+				824197C22642F64500D6C498 /* LoadingCollectionViewCell.xib */,
+			);
+			path = ReUsableComponents;
 			sourceTree = "<group>";
 		};
 		A9F01E9324E1ED270034ABB9 /* Managers */ = {
@@ -479,6 +493,7 @@
 				8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */,
 				76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */,
 				01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */,
+				824197C42642F64500D6C498 /* LoadingCollectionViewCell.xib in Resources */,
 				76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */,
 				01D65F69249138AD0082F8FF /* Assets.xcassets in Resources */,
 			);
@@ -547,6 +562,7 @@
 				76C7AE442497B7370053EF25 /* CharacterDetailsSceneProtocols.swift in Sources */,
 				A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */,
 				76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */,
+				824197C32642F64500D6C498 /* LoadingCollectionViewCell.swift in Sources */,
 				019ACF862492651D003E3ECF /* Characters.swift in Sources */,
 				8245E2382641C14600A1A5AB /* HomeChararctersVerticalLayout.swift in Sources */,
 				8232296526414085003460F6 /* Crypto.swift in Sources */,

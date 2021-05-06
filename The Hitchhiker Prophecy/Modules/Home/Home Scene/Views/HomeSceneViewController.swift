@@ -28,12 +28,16 @@ class HomeSceneViewController: UIViewController {
     
     func setupUI()  {
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Change Layout", style: .plain, target: self, action: #selector(onToggle))
+        
         collectionView.collectionViewLayout = HomeChararctersVerticalLayout()
         
         collectionView.register(UINib(nibName: HomeCharacterCollectionViewCell.className, bundle: nil), forCellWithReuseIdentifier: HomeCharacterCollectionViewCell.className)
+        
+        collectionView.register(UINib(nibName: LoadingCollectionViewCell.className, bundle: nil), forCellWithReuseIdentifier: LoadingCollectionViewCell.className)
     }
     
-    @IBAction func onToggle()   {
+    @objc func onToggle()   {
         
         if let currentLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             
@@ -63,22 +67,49 @@ extension HomeSceneViewController: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return characterViewModels.count
+        var numberOfItems = characterViewModels.count
+        
+        let totalNumberOfCharacters = interactor?.totalNumberOfCharacters ?? 0
+        
+        //If total number of characters or all characters are not fetched so far, then add one extra cell to show for a loading spinner
+        if (totalNumberOfCharacters == 0 || (characterViewModels.count < totalNumberOfCharacters)) {
+            numberOfItems += 1
+        }
+        
+        return numberOfItems
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if (indexPath.item == characterViewModels.count - 1) {    //load more data
+            interactor?.fetchCharacters()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCharacterCollectionViewCell.className, for: indexPath) as?  HomeCharacterCollectionViewCell
+        if (indexPath.item == characterViewModels.count) {
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LoadingCollectionViewCell.className, for: indexPath) as! LoadingCollectionViewCell
+            
+            cell.animateSpinner()
+            
+            return cell
+        }
+        else {
         
-        let characterViewModel = characterViewModels[indexPath.row]
-        
-        cell?.configure(with: characterViewModel)
-        
-        return cell!
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCharacterCollectionViewCell.className, for: indexPath) as! HomeCharacterCollectionViewCell
+            
+            let characterViewModel = characterViewModels[indexPath.item]
+            
+            cell.configure(with: characterViewModel)
+            
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        router?.routeToCharacterDetailsWithCharacter(at: indexPath.row)
+        router?.routeToCharacterDetailsWithCharacter(at: indexPath.item)
     }
 }

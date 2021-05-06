@@ -20,6 +20,7 @@ protocol HomeSceneBusinessLogic: class {
     var worker: HomeWorkerType { get }
     var presenter: HomeScenePresentationLogic { get }
     
+    var totalNumberOfCharacters: Int { get }
     func fetchCharacters()
 }
 
