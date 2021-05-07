@@ -6,5 +6,6 @@ target 'The Hitchhiker Prophecy' do
 
   # Pods for The Hitchhiker Prophecy
   pod 'Alamofire', '4.7.3'
-  pod 'AlamofireImage', '3.4.1'
+  #pod 'AlamofireImage', '3.4.1'  #Big Memory leaks occuring in collection cell
+  pod 'SDWebImage', '~> 5.11'     #UsingSDWebImage instead to fetch images
 end

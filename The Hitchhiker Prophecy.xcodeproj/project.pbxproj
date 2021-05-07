@@ -47,6 +47,7 @@
 		8245E2382641C14600A1A5AB /* HomeChararctersVerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */; };
 		8245E23C2641C4C800A1A5AB /* Object+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */; };
 		8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */; };
+		824F41BD2645CDB500D65B4D /* TestHomeSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824F41BC2645CDB500D65B4D /* TestHomeSceneInteractor.swift */; };
 		A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */; };
 		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
 		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
@@ -110,6 +111,7 @@
 		8245E2372641C14600A1A5AB /* HomeChararctersVerticalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChararctersVerticalLayout.swift; sourceTree = "<group>"; };
 		8245E23B2641C4C800A1A5AB /* Object+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+Extensions.swift"; sourceTree = "<group>"; };
 		8245E2402641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		824F41BC2645CDB500D65B4D /* TestHomeSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeSceneInteractor.swift; sourceTree = "<group>"; };
 		A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
+				824F41BC2645CDB500D65B4D /* TestHomeSceneInteractor.swift */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
 			);
 			path = "The Hitchhiker ProphecyTests";
@@ -598,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824F41BD2645CDB500D65B4D /* TestHomeSceneInteractor.swift in Sources */,
 				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,6 +788,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Hitchhiker ProphecyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -803,6 +808,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Hitchhiker ProphecyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

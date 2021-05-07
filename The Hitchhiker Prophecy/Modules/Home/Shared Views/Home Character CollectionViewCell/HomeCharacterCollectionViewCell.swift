@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeCharacterCollectionViewCell: UICollectionViewCell {
     // MARK: - Outlets
@@ -23,8 +24,8 @@ class HomeCharacterCollectionViewCell: UICollectionViewCell {
     func configure(with viewModel: HomeScene.Search.ViewModel) {
         characterNameLabel.text = viewModel.name
         if let url = URL(string: viewModel.imageUrl) {
-            characterImageView.af_setImage(withURL: url,
-                                           placeholderImage: UIImage(named: "placeHolder"))
+            characterImageView.image = nil
+            characterImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeHolder"))
         } else {
             characterImageView.image = UIImage(named:"placeHolder")
         }
