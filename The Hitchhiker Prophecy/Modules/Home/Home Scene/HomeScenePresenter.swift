@@ -40,8 +40,6 @@ class HomeScenePresneter: HomeScenePresentationLogic {
     func presentCharacters(_ response: HomeScene.Search.Response) {
         // TODO: Implement
         
-        //paging needs to be done
-        
         switch response {
     
             case .success(let output):
