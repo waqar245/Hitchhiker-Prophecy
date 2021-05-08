@@ -52,6 +52,9 @@
 		824F41D42645E80800D65B4D /* TestPathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824F41D32645E80800D65B4D /* TestPathHelper.swift */; };
 		824F41D926467EBF00D65B4D /* TestHomeScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824F41D826467EBF00D65B4D /* TestHomeScenePresenter.swift */; };
 		824F41E126468CA000D65B4D /* TestHomeSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824F41E026468CA000D65B4D /* TestHomeSceneRouter.swift */; };
+		824F41F02646997E00D65B4D /* TestCharacterDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824F41EF2646997E00D65B4D /* TestCharacterDetailsSceneInteractor.swift */; };
+		824F41FB2646A6F200D65B4D /* CharactersDetailTestJsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 824F41F72646A56500D65B4D /* CharactersDetailTestJsonFile.json */; };
+		824F42012646AA6300D65B4D /* TestCharacterDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824F42002646AA6300D65B4D /* TestCharacterDetailsScenePresenter.swift */; };
 		A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */; };
 		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
 		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
@@ -120,6 +123,9 @@
 		824F41D32645E80800D65B4D /* TestPathHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPathHelper.swift; sourceTree = "<group>"; };
 		824F41D826467EBF00D65B4D /* TestHomeScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeScenePresenter.swift; sourceTree = "<group>"; };
 		824F41E026468CA000D65B4D /* TestHomeSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeSceneRouter.swift; sourceTree = "<group>"; };
+		824F41EF2646997E00D65B4D /* TestCharacterDetailsSceneInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCharacterDetailsSceneInteractor.swift; sourceTree = "<group>"; };
+		824F41F72646A56500D65B4D /* CharactersDetailTestJsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CharactersDetailTestJsonFile.json; sourceTree = "<group>"; };
+		824F42002646AA6300D65B4D /* TestCharacterDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCharacterDetailsScenePresenter.swift; sourceTree = "<group>"; };
 		A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
@@ -381,6 +387,8 @@
 			isa = PBXGroup;
 			children = (
 				824F41EE2646992F00D65B4D /* MockJsonData */,
+				824F41EF2646997E00D65B4D /* TestCharacterDetailsSceneInteractor.swift */,
+				824F42002646AA6300D65B4D /* TestCharacterDetailsScenePresenter.swift */,
 			);
 			path = CharacterDetailsSceneTests;
 			sourceTree = "<group>";
@@ -388,6 +396,7 @@
 		824F41EE2646992F00D65B4D /* MockJsonData */ = {
 			isa = PBXGroup;
 			children = (
+				824F41F72646A56500D65B4D /* CharactersDetailTestJsonFile.json */,
 			);
 			path = MockJsonData;
 			sourceTree = "<group>";
@@ -539,6 +548,7 @@
 			files = (
 				8245E2422641CA6100A1A5AB /* HomeCharacterCollectionViewCell.xib in Resources */,
 				76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */,
+				824F41FB2646A6F200D65B4D /* CharactersDetailTestJsonFile.json in Resources */,
 				01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */,
 				824197C42642F64500D6C498 /* LoadingCollectionViewCell.xib in Resources */,
 				76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */,
@@ -648,6 +658,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				824F41E126468CA000D65B4D /* TestHomeSceneRouter.swift in Sources */,
+				824F41F02646997E00D65B4D /* TestCharacterDetailsSceneInteractor.swift in Sources */,
+				824F42012646AA6300D65B4D /* TestCharacterDetailsScenePresenter.swift in Sources */,
 				824F41D926467EBF00D65B4D /* TestHomeScenePresenter.swift in Sources */,
 				824F41D42645E80800D65B4D /* TestPathHelper.swift in Sources */,
 				824F41BD2645CDB500D65B4D /* TestHomeSceneInteractor.swift in Sources */,

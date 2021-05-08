@@ -1,0 +1,49 @@
+{
+    "id": 1009610,
+    "name": "Spider-Man",
+    "description": "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+    "modified": "2020-07-21T10:30:10-0400",
+    "thumbnail": {
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b",
+        "extension": "jpg"
+    },
+    "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+    "comics": {
+        "available": 3995,
+        "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009610/comics",
+        "items": [],
+        "returned": 0
+    },
+    "series": {
+        "available": 1019,
+        "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009610/series",
+        "items": [],
+        "returned": 0
+    },
+    "stories": {
+        "available": 5986,
+        "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009610/stories",
+        "items": [],
+        "returned": 0
+    },
+    "events": {
+        "available": 38,
+        "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009610/events",
+        "items": [],
+        "returned": 0
+    },
+    "urls": [
+        {
+            "type": "detail",
+            "url": "http://marvel.com/comics/characters/1009610/spider-man?utm_campaign=apiRef&utm_source=00fbd7f0abc3f3b8b9276866a5f770d2"
+        },
+        {
+            "type": "wiki",
+            "url": "http://marvel.com/universe/Spider-Man_(Peter_Parker)?utm_campaign=apiRef&utm_source=00fbd7f0abc3f3b8b9276866a5f770d2"
+        },
+        {
+            "type": "comiclink",
+            "url": "http://marvel.com/comics/characters/1009610/spider-man?utm_campaign=apiRef&utm_source=00fbd7f0abc3f3b8b9276866a5f770d2"
+        }
+    ]
+}
