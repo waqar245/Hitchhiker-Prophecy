@@ -254,12 +254,10 @@
 		01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */ = {
 			isa = PBXGroup;
 			children = (
-				824F41D726467EA200D65B4D /* MockJsonData */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
-				824F41BC2645CDB500D65B4D /* TestHomeSceneInteractor.swift */,
-				824F41D826467EBF00D65B4D /* TestHomeScenePresenter.swift */,
-				824F41E026468CA000D65B4D /* TestHomeSceneRouter.swift */,
 				824F41D32645E80800D65B4D /* TestPathHelper.swift */,
+				824F41EC264698F100D65B4D /* HomeSceneTests */,
+				824F41ED2646991A00D65B4D /* CharacterDetailsSceneTests */,
 			);
 			path = "The Hitchhiker ProphecyTests";
 			sourceTree = "<group>";
@@ -364,6 +362,32 @@
 			isa = PBXGroup;
 			children = (
 				824F41C22645DD3900D65B4D /* CharactersListTestJsonFile.json */,
+			);
+			path = MockJsonData;
+			sourceTree = "<group>";
+		};
+		824F41EC264698F100D65B4D /* HomeSceneTests */ = {
+			isa = PBXGroup;
+			children = (
+				824F41D726467EA200D65B4D /* MockJsonData */,
+				824F41BC2645CDB500D65B4D /* TestHomeSceneInteractor.swift */,
+				824F41D826467EBF00D65B4D /* TestHomeScenePresenter.swift */,
+				824F41E026468CA000D65B4D /* TestHomeSceneRouter.swift */,
+			);
+			path = HomeSceneTests;
+			sourceTree = "<group>";
+		};
+		824F41ED2646991A00D65B4D /* CharacterDetailsSceneTests */ = {
+			isa = PBXGroup;
+			children = (
+				824F41EE2646992F00D65B4D /* MockJsonData */,
+			);
+			path = CharacterDetailsSceneTests;
+			sourceTree = "<group>";
+		};
+		824F41EE2646992F00D65B4D /* MockJsonData */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = MockJsonData;
 			sourceTree = "<group>";
