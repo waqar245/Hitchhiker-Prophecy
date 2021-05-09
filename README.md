@@ -3,7 +3,7 @@ Hitchhiker-Prophecy
 
 This is the submission for the Swvl iOS Software Engineer Challenge.
 
-![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-05-10 at 00 18 24](https://user-images.githubusercontent.com/5020082/117584277-79c82c00-b125-11eb-81d6-c0dbf74dbb02.png)
+![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-05-10 at 00 18 24](https://user-images.githubusercontent.com/5020082/117584277-79c82c00-b125-11eb-81d6-c0dbf74dbb02.png width="264")
 
 
 ## Architecture
