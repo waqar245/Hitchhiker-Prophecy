@@ -52,14 +52,17 @@ class HomeSceneViewController: UIViewController {
 extension HomeSceneViewController: HomeSceneDisplayView {
     func didFetchCharacters(viewModel: [HomeScene.Search.ViewModel]) {
         // TODO: Implement
-        
         characterViewModels.append(contentsOf: viewModel)
         collectionView.reloadData()
     }
     
     func failedToFetchCharacters(error: Error) {
         // TODO: Implement
-        print("That")
+        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        
+        present(alert, animated: true)
     }
 }
 
@@ -71,7 +74,7 @@ extension HomeSceneViewController: UICollectionViewDataSource, UICollectionViewD
         
         let totalNumberOfCharacters = interactor?.totalNumberOfCharacters ?? 0
         
-        //If total number of characters or all characters are not fetched so far, then add one extra cell to show for a loading spinner
+        //If all characters are not fetched so far, then add one extra cell to show cell with loading spinner
         if (totalNumberOfCharacters == 0 || (characterViewModels.count < totalNumberOfCharacters)) {
             numberOfItems += 1
         }

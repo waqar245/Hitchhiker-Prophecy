@@ -23,7 +23,7 @@ class HomeChararctersHorizontalLayout: UICollectionViewFlowLayout {
         
         let padding:CGFloat = 16.0
         let cellWidth:CGFloat = UIScreen.main.bounds.width - (padding * 2)
-        let cellHeight:CGFloat = 526.0
+        let cellHeight:CGFloat = (UIScreen.main.bounds.height / 1.5)
         
         minimumLineSpacing = 8
         minimumInteritemSpacing = 16
